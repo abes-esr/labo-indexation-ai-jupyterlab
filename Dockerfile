@@ -12,3 +12,4 @@ ENTRYPOINT ["/docker-entrypoint.overload.sh"]
 # see https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile#L148
 CMD ["start-notebook.sh", "--NotebookApp.allow_remote_access=true"]
 
+
