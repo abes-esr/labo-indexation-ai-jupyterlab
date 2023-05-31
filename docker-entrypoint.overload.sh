@@ -2,29 +2,29 @@
 
 
 # Clone des dépôts git
-if [ "$GIT_REPO1_NAME" != "" ]; then
-  if [ ! -d /home/jovyan/work/$GIT_REPO1_NAME/.git/ ]; then
-    echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $GIT_REPO1_NAME pour le JupyterLab"
-    rm -rf /home/jovyan/work/$GIT_REPO1_NAME/
+if [ "$LABO_INDEXATION_AI_GIT_REPO1_NAME" != "" ]; then
+  if [ ! -d /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO1_NAME/.git/ ]; then
+    echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $LABO_INDEXATION_AI_GIT_REPO1_NAME pour le JupyterLab"
+    rm -rf /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO1_NAME/
     git config --global pull.rebase false
-    git clone "$GIT_REPO1_URL" /home/jovyan/work/$GIT_REPO1_NAME/
+    git clone "$LABO_INDEXATION_AI_GIT_REPO1_URL" /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO1_NAME/
   else
-    echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $GIT_REPO1_URL déjà réalisé dans /home/jovyan/work/$GIT_REPO1_NAME"
+    echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $LABO_INDEXATION_AI_GIT_REPO1_URL déjà réalisé dans /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO1_NAME"
   fi
 else
-  echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Erreur: GIT_REPO1_URL GIT_REPO1_NAME doivent être renseignées pour pouvoir travailler avec des fichiers ipynb collaborativement"
+  echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Erreur: LABO_INDEXATION_AI_GIT_REPO1_URL LABO_INDEXATION_AI_GIT_REPO1_NAME doivent être renseignées pour pouvoir travailler avec des fichiers ipynb collaborativement"
 fi
-if [ "$GIT_REPO2_NAME" != "" ]; then
-  if [ ! -d /home/jovyan/work/$GIT_REPO2_NAME/.git/ ]; then
-    echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $GIT_REPO2_NAME pour le JupyterLab"
-    rm -rf /home/jovyan/work/$GIT_REPO2_NAME/
+if [ "$LABO_INDEXATION_AI_GIT_REPO2_NAME" != "" ]; then
+  if [ ! -d /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO2_NAME/.git/ ]; then
+    echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $LABO_INDEXATION_AI_GIT_REPO2_NAME pour le JupyterLab"
+    rm -rf /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO2_NAME/
     git config --global pull.rebase false
-    git clone "$GIT_REPO2_URL" /home/jovyan/work/$GIT_REPO2_NAME/
+    git clone "$LABO_INDEXATION_AI_GIT_REPO2_URL" /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO2_NAME/
   else
-    echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $GIT_REPO2_URL déjà réalisé dans /home/jovyan/work/$GIT_REPO2_NAME"
+    echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $LABO_INDEXATION_AI_GIT_REPO2_URL déjà réalisé dans /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO2_NAME"
   fi
 else
-  echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Erreur: GIT_REPO2_URL GIT_REPO2_NAME doivent être renseignées pour pouvoir travailler avec des fichiers ipynb collaborativement"
+  echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Erreur: LABO_INDEXATION_AI_GIT_REPO2_URL LABO_INDEXATION_AI_GIT_REPO2_NAME doivent être renseignées pour pouvoir travailler avec des fichiers ipynb collaborativement"
 fi
 
 
