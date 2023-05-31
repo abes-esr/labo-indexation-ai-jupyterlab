@@ -12,7 +12,7 @@ if [ "$LABO_INDEXATION_AI_GIT_REPO1_NAME" != "" ]; then
     echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $LABO_INDEXATION_AI_GIT_REPO1_URL déjà réalisé dans /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO1_NAME"
   fi
 else
-  echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Erreur: LABO_INDEXATION_AI_GIT_REPO1_URL LABO_INDEXATION_AI_GIT_REPO1_NAME doivent être renseignées pour pouvoir travailler avec des fichiers ipynb collaborativement"
+  echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Warning: LABO_INDEXATION_AI_GIT_REPO1_URL LABO_INDEXATION_AI_GIT_REPO1_NAME doivent être renseignées pour pouvoir travailler avec des fichiers ipynb collaborativement"
 fi
 if [ "$LABO_INDEXATION_AI_GIT_REPO2_NAME" != "" ]; then
   if [ ! -d /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO2_NAME/.git/ ]; then
@@ -24,7 +24,7 @@ if [ "$LABO_INDEXATION_AI_GIT_REPO2_NAME" != "" ]; then
     echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Git clone du dépot $LABO_INDEXATION_AI_GIT_REPO2_URL déjà réalisé dans /home/jovyan/work/$LABO_INDEXATION_AI_GIT_REPO2_NAME"
   fi
 else
-  echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Erreur: LABO_INDEXATION_AI_GIT_REPO2_URL LABO_INDEXATION_AI_GIT_REPO2_NAME doivent être renseignées pour pouvoir travailler avec des fichiers ipynb collaborativement"
+  echo "--> $(date '+%Y-%m-%d %H:%M:%S') - Warning: LABO_INDEXATION_AI_GIT_REPO2_URL LABO_INDEXATION_AI_GIT_REPO2_NAME doivent être renseignées pour pouvoir travailler avec des fichiers ipynb collaborativement"
 fi
 
 

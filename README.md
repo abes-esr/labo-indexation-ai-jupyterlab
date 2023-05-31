@@ -11,14 +11,6 @@ Pour tester l'image :
 docker build . -t labo-image-test
 
 docker run --rm -p 8888:8888 \
-   -e GIT_REPO=https://github.com/abes-esr/labo-indexation-ai.git \
-   -e JUPYTER_ENABLE_LAB=yes \
-   -e JUPYTER_TOKEN=secret \
-   --name labo-container-test \
-   labo-image-test
-
-
-docker run --rm -p 8888:8888 \
    -e LABO_INDEXATION_AI_GIT_REPO1_NAME=labo-indexation-ai \
    -e LABO_INDEXATION_AI_GIT_REPO1_URL=https://github.com/abes-esr/labo-indexation-ai.git \
    -e LABO_INDEXATION_AI_GIT_REPO2_NAME=abes-labo-movies \
