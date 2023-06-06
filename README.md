@@ -7,8 +7,7 @@ Image docker 🐳 pour le projet Abes Labo indexation-ai permettant de déployer
 Deux vidéos pour montrer comment faire un commit depuis jupyterlab sur un dépôt github avec la particularité de devoir utiliser un personal access tocken pour l'authentification (pre-requis github)
 
 
-todo : ajouter vidéo
-
+https://github.com/abes-esr/labo-indexation-ai-jupyterlab/assets/328244/60a1f6ec-e0fc-44b4-a12a-8abced313e72
 
 
 
